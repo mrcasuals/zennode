@@ -2,14 +2,7 @@
 #!/bin/bash
 #step 3
 
-
-export DEBIAN_FRONTEND=noninteractive
-
-print_status() {
-    echo
-    echo "## $1"
-    echo
-}
+cd ..
 
 if [ $# -ne 4 ]; then
     echo "Execution format ./install.sh stakeaddr email fqdn region (eu, na or sea)"
